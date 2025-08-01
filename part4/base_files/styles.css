@@ -1,0 +1,238 @@
+/* 
+  This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
+  You'll probably need to override some of theese styles.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&family=Raleway&family=Noto+Sans&family=Roboto+Slab&family=Dosis&family=M+PLUS+Rounded+1c&family=Dela+Gothic+One&display=swap');
+
+:root {
+    --shading-blue: #39C, #36C, #36C, #33C;
+    --theme-header-gradient: linear-gradient(150deg, goldenrod, var(--shading-blue));
+    --theme-background-gradient: linear-gradient(to right, var(--shading-blue));
+    scroll-behavior: smooth;
+    --box-shadows: 0 3px 12px 0 #0000004d;
+    --whitish-background: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    /* Default */
+    margin: 0;
+    /* Default */
+    padding: 0;
+    /* Default */
+
+    font-family: "Noto Sans", "M PLUS Rounded 1c", "Roboto Slab", "Dosis", "Schibsted Grotesk", "Dela Gothic One", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Default : font-family: Arial, sans-serif; */
+}
+
+body {
+    background-color: #d9e5f0;
+    /* Default: background-color: #f4f4f4 */
+    color: #333;
+    /* Default */
+}
+
+h2 {
+    background: var(--theme-background-gradient);
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: var(--box-shadows);
+}
+
+
+/* Header - Footer */
+header,
+footer {
+    color: #fff;
+    /* Default */
+    padding: 1rem;
+    /* Default */
+}
+
+header {
+    display: flex;
+    /*  background-color: #333; */
+}
+
+#header-nav {
+    background: var(--theme-header-gradient);
+    width: 100%;
+
+    position: fixed;
+    z-index: 1000;
+    box-shadow: var(--box-shadows);
+}
+
+footer {
+    background: var(--theme-background-gradient);
+    text-align: center;
+    box-shadow: var(--box-shadows);
+}
+
+
+/* Navbar */
+nav {
+    background: var(--theme-background-gradient);
+    height: 40px;
+}
+
+#nav-a-link {
+    margin-left: 60px;
+}
+
+nav a {
+    color: #fff;
+    /* Default */
+    text-decoration: none;
+    /* Default */
+    /* Default: margin-left: 1rem;*/
+    position: relative;
+    top: 9px;
+    padding: 9px 2rem;
+    margin: 0px;
+    transition: .5s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+nav a:hover {
+    background-color: #3396;
+    transform: scale(1.02);
+    transition: .5s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+
+/* Main */
+main {
+    padding: 2rem;
+    /* Default */
+    min-height: 1080px;
+    padding-top: 11em;
+}
+
+
+/* Cards -Required- */
+.place-details,
+.review-card,
+.place-card,
+.add-review {
+    margin: 20px;
+    /* Requirement */
+    padding: 10px;
+    /* Requirement */
+    border: 1px solid #ddd;
+    /* Requirement */
+    border-radius: 10px;
+    /* Requirement */
+
+    background-color: var(--whitish-background);
+    box-shadow: var(--box-shadows);
+    transition: .5s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+.place-details:hover,
+.review-card:hover,
+.place-card:hover {
+    transform: scale(1.02);
+    transition: .5s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+
+/* Cards -Custom- */
+.place-info {
+    padding: 2em;
+}
+
+.place-info>p,
+.place-card>p {
+    padding: 1.33em;
+}
+
+[class$="-label"],
+.reviewer-name {
+    font-weight: bold;
+}
+
+
+/* Place cards */
+#place-details {
+    text-align: center;
+}
+
+.place-title {
+    background: var(--theme-background-gradient);
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: var(--box-shadows);
+}
+
+
+/* Review cards */
+.review-info {
+    padding: 1.5em;
+}
+
+#reviews {
+    margin-bottom: 4em;
+}
+
+#review-form {
+    color: #123;
+    padding: 2em;
+}
+
+#review-form div {
+    padding: 1em;
+}
+
+/* Review form */
+.add-review {
+    margin: 0;
+}
+
+#add-review {
+    width: 50%;
+}
+
+[id$="-text"] {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Buttons */
+[class$="-button"] {
+    background: var(--theme-background-gradient);
+    color: white;
+    border-radius: 8px;
+    box-shadow: var(--box-shadows);
+    padding: 8px;
+    transition: .5s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+[class$="-button"]:hover {
+    transform: scale(1.1);
+    transition: .5s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Stars */
+[id^="review-rating-stars"] {
+    user-select: none;
+    color: silver;
+}
+
+.star.checked,
+.review-star.checked {
+    fill: goldenrod;
+}
+
+.star,
+.review-star {
+    height: 20px;
+    fill: lightgray;
+    transition: fill 0.2s;
+    vertical-align: text-bottom;
+}
+
+.star {
+    cursor: pointer;
+}

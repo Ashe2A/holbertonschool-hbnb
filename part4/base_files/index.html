@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Places</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header-nav">
+        <header>
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="Logo"></a>
+        </header>
+        <nav>
+            <div id="nav-a-link">
+                <a href="login.html" id="login-link">Login</a>
+                <a href="index.html" id="index-link">Available Places</a>
+                <a href="place.html" id="place-link">Place Details</a>
+                <a href="add_review.html" id="add-review-link">Add a Review</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section id="filter">
+            <label for="price-filter" class="max-price-label">Max Price:</label>
+            <select id="price-filter">
+                <!-- Options will be populated dynamically -->
+            </select>
+        </section>
+        <section id="places-list">
+            <div class="place-card">
+                <div class="place-title">
+                    <h1>Beautiful place</h1>
+                </div>
+                <div class="place-info">
+                    <p><span class="price-label">Price per night:</span> <span class="price-field">$150</span></p>
+                </div>
+                <input type="button" class="details-button" value="View Details">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 HBnB, Ashe2002. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

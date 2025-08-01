@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+    <div id="header-nav">
+        <header>
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="Logo"></a>
+        </header>
+        <nav>
+            <div id="nav-a-link">
+                <a href="login.html" id="login-link">Login</a>
+                <a href="index.html" id="index-link">Available Places</a>
+                <a href="place.html" id="place-link">Place Details</a>
+                <a href="add_review.html" id="add-review-link">Add a Review</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section id="place-details">
+            <!-- Place details will be populated dynamically -->
+            <div class="place-details">
+                <div class="place-title">
+                    <h1>Beautiful place</h1>
+                </div>
+                <div class="place-info">
+                    <p><span class="place-host-label">Host:</span> <span class="place-host-field">John Doe</span></p>
+                    <p><span class="price-label">Prince per night:</span> <span class="price-field">$150</span></p>
+                    <p><span class="description-label">Description:</span> <span
+                            class="description-field">Description...</span></p>
+                    <p><span class="amenities-label">Amenities:</span> <span class="amenities-field">Amenity1,
+                            Amenity2</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="reviews">
+            <!-- Reviews will be populated dynamically -->
+            <h2>Reviews</h2>
+            <div class="review-card">
+                <div class="review-info">
+                    <p><span class="reviewer-name">Jane Smith:</span></p>
+                    <p><span class="review-text">Great place!</span></p>
+                    <p><span class="review-rating">Rating:</span>
+                        <span id="review-rating-stars">
+                            <svg class="review-star checked" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="review-star checked" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="review-star checked" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="review-star" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="review-star" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-info">
+                    <p><span class="reviewer-name">John Doe Jr.:</span></p>
+                    <p><span class="review-text">Nice place!</span></p>
+                    <p><span class="review-rating">Rating:</span>
+                        <span id="review-rating-stars">
+                            <svg class="review-star checked" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="review-star checked" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="review-star checked" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="review-star checked" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="review-star" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="add-review">
+            <div class="add-review">
+                <h2>Add a Review</h2>
+                <form id="review-form">
+                    <div>
+                        <label for="review-text" class="review-label">Review:</label>
+                        <textarea id="review-text" name="review-text" required></textarea>
+                    </div>
+                    <div>
+                    <label for="rating-range" class="rating-label">Rating:</label>
+                        <span id="review-rating-stars-submit">
+                            <svg class="star" data-value="1" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="star" data-value="2" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="star" data-value="3" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="star" data-value="4" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                            <svg class="star" data-value="5" viewBox="0 0 24 24">
+                                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+                            </svg>
+                        </span>
+                    </div>
+                    <button class="review-submission-button" type="submit">Submit</button>
+            </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 HBnB, Ashe2002. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
